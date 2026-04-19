@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-navy: #1A237E;
+    --color-gold: #D4AF37;
+    --color-pearl: #F5F5F5;
+    --color-chocolate: #262626;
+  }
+
+  body {
+    @apply bg-[var(--color-pearl)] text-[var(--color-chocolate)] font-sans;
+  }
+}
+
+@layer components {
+  /* Glassmorphism Effect */
+  .glass {
+    @apply bg-white/20 backdrop-blur-lg border border-white/20 shadow-2xl rounded-3xl;
+  }
+  
+  /* Gold Button */
+  .btn-gold {
+    @apply bg-gradient-to-r from-[#F5E0B0] via-[#D4AF37] to-[#B7902E] 
+           text-white font-extrabold uppercase tracking-widest py-4 rounded-full 
+           hover:brightness-110 active:scale-95 transition-all shadow-lg;
+  }
+
+  /* Input Fields */
+  .input-field {
+    @apply w-full p-4 pl-12 rounded-xl bg-white/30 border border-white/30 
+           focus:ring-2 focus:ring-[var(--color-gold)] outline-none text-[var(--color-chocolate)];
+  }
+}
