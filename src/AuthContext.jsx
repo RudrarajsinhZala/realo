@@ -4,7 +4,7 @@ const AuthContext = createContext(null);
 
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
-
+//
   // Check for existing session on load
   useEffect(() => {
     const storedUser = localStorage.getItem('realo_user');
