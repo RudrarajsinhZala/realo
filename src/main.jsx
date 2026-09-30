@@ -6,7 +6,9 @@ import PrivateRoute from './PrivateRoute'
 import Login from './pages/Login'
 import Dashboard from './pages/Dashboard'
 import './index.css'
-// import GateWay
+
+
+// import the object here 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>
